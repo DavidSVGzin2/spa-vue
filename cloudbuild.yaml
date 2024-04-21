@@ -1,13 +1,13 @@
-steps:
-# Install
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['install']
-# Test
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'test:unit']
-# Build
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'build']
+ steps:
+ - name: 'node'
+    entrypoint: 'npm'
+    args: ['install']
+ - name: 'node'
+    entrypoint: 'npm'
+    args: ['test']
+ - name: 'node'
+    entrypoint: 'npm'
+    args: ['run', 'build']
 # Deploy
-- name: 'gcr.io/intricate-web-420903/firebase'
+ - name: 'gcr.io/intricate-web-420903/firebase'
   args: ['deploy']
