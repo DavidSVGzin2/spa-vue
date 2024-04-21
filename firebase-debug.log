@@ -1,0 +1,116 @@
+[debug] [2024-04-21T15:03:31.728Z] ----------------------------------------------------------------------
+[debug] [2024-04-21T15:03:31.730Z] Command:       /usr/local/bin/node /Users/heangsivfang/Desktop/vue/node_modules/.bin/firebase deploy --debug --token 
+[debug] [2024-04-21T15:03:31.730Z] CLI Version:   13.7.3
+[debug] [2024-04-21T15:03:31.730Z] Platform:      darwin
+[debug] [2024-04-21T15:03:31.730Z] Node Version:  v20.12.2
+[debug] [2024-04-21T15:03:31.731Z] Time:          Sun Apr 21 2024 22:03:31 GMT+0700 (Indochina Time)
+[debug] [2024-04-21T15:03:31.731Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-21T15:03:31.800Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-21T15:03:31.801Z] > authorizing via signed-in user (heangdavid168@gmail.com)
+[debug] [2024-04-21T15:03:31.801Z] [iam] checking project intricate-web-420903 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-21T15:03:31.802Z] > refreshing access token with scopes: []
+[debug] [2024-04-21T15:03:31.803Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-21T15:03:31.804Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-21T15:03:32.051Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-21T15:03:32.051Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-21T15:03:32.066Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/intricate-web-420903:testIamPermissions [none]
+[debug] [2024-04-21T15:03:32.067Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/intricate-web-420903:testIamPermissions x-goog-quota-user=projects/intricate-web-420903
+[debug] [2024-04-21T15:03:32.067Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/intricate-web-420903:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-21T15:03:33.255Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/intricate-web-420903:testIamPermissions 200
+[debug] [2024-04-21T15:03:33.256Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/intricate-web-420903:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-21T15:03:33.257Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/intricate-web-420903 [none]
+[debug] [2024-04-21T15:03:33.728Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/intricate-web-420903 200
+[debug] [2024-04-21T15:03:33.728Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/intricate-web-420903 {"projectId":"intricate-web-420903","projectNumber":"390770317092","displayName":"My First Project","name":"projects/intricate-web-420903","resources":{"hostingSite":"intricate-web-420903"},"state":"ACTIVE","etag":"1_d7e6bb30-8319-4b62-8903-b80f039b6357"}
+[info] 
+[info] === Deploying to 'intricate-web-420903'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-04-21T15:03:33.735Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions [none]
+[debug] [2024-04-21T15:03:33.736Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-04-21T15:03:34.949Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions 200
+[debug] [2024-04-21T15:03:34.950Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions {"name":"projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[intricate-web-420903]: beginning deploy... 
+[info] i  hosting[intricate-web-420903]: found 7 files in dist 
+[debug] [2024-04-21T15:03:34.960Z] [hosting] uploading with 200 concurrency
+[debug] [2024-04-21T15:03:34.961Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2024-04-21T15:03:35.031Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2024-04-21T15:03:35.031Z] [hosting][hash queue][FINAL] {"max":66,"min":5,"avg":15.142857142857142,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":69}
+[debug] [2024-04-21T15:03:35.031Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca:populateFiles [none]
+[debug] [2024-04-21T15:03:35.031Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca:populateFiles {"files":{"/css/app.2cf79ad6.css":"0643e578a9367fab660a457e8103b41f2c56563fd7e09706636624f5aeebaf72","/index.html":"e79b09530779c2af645ac57d96e657c88170dd0499b0ee7903eff2d900159a1f","/favicon.ico":"7a1a72943a1b2d7ed41d75574715a454ac9bfb21b636100c59ccd713ca3e86e1","/js/app.c0706bb3.js":"c5ae02d0887b11d9616f82e059225103e3f973b0e377b3efc19c799b86d7d264","/js/app.c0706bb3.js.map":"f9af88968f62705907f12c3e53e9a4ca474b3db88b3ad3398e0a679158ea41d3","/js/chunk-vendors.c2f3a337.js":"bd46d50d393989467fc79ab955fd8c1e05f2891d3948374710734f189d95a14e","/js/chunk-vendors.c2f3a337.js.map":"49887cac16288a67b0d7e2bd3c9000b6666f042acb7a05dd578c35f909b50ffb"}}
+[debug] [2024-04-21T15:03:35.440Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca:populateFiles 200
+[debug] [2024-04-21T15:03:35.440Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca:populateFiles {"uploadRequiredHashes":["e79b09530779c2af645ac57d96e657c88170dd0499b0ee7903eff2d900159a1f","7a1a72943a1b2d7ed41d75574715a454ac9bfb21b636100c59ccd713ca3e86e1","c5ae02d0887b11d9616f82e059225103e3f973b0e377b3efc19c799b86d7d264","f9af88968f62705907f12c3e53e9a4ca474b3db88b3ad3398e0a679158ea41d3","bd46d50d393989467fc79ab955fd8c1e05f2891d3948374710734f189d95a14e","49887cac16288a67b0d7e2bd3c9000b6666f042acb7a05dd578c35f909b50ffb","0643e578a9367fab660a457e8103b41f2c56563fd7e09706636624f5aeebaf72"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files"}
+[debug] [2024-04-21T15:03:35.444Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/e79b09530779c2af645ac57d96e657c88170dd0499b0ee7903eff2d900159a1f [none]
+[debug] [2024-04-21T15:03:35.444Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/e79b09530779c2af645ac57d96e657c88170dd0499b0ee7903eff2d900159a1f [stream]
+[debug] [2024-04-21T15:03:35.447Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/7a1a72943a1b2d7ed41d75574715a454ac9bfb21b636100c59ccd713ca3e86e1 [none]
+[debug] [2024-04-21T15:03:35.447Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/7a1a72943a1b2d7ed41d75574715a454ac9bfb21b636100c59ccd713ca3e86e1 [stream]
+[debug] [2024-04-21T15:03:35.449Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/c5ae02d0887b11d9616f82e059225103e3f973b0e377b3efc19c799b86d7d264 [none]
+[debug] [2024-04-21T15:03:35.449Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/c5ae02d0887b11d9616f82e059225103e3f973b0e377b3efc19c799b86d7d264 [stream]
+[debug] [2024-04-21T15:03:35.450Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/f9af88968f62705907f12c3e53e9a4ca474b3db88b3ad3398e0a679158ea41d3 [none]
+[debug] [2024-04-21T15:03:35.450Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/f9af88968f62705907f12c3e53e9a4ca474b3db88b3ad3398e0a679158ea41d3 [stream]
+[debug] [2024-04-21T15:03:35.452Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/bd46d50d393989467fc79ab955fd8c1e05f2891d3948374710734f189d95a14e [none]
+[debug] [2024-04-21T15:03:35.452Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/bd46d50d393989467fc79ab955fd8c1e05f2891d3948374710734f189d95a14e [stream]
+[debug] [2024-04-21T15:03:35.453Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/49887cac16288a67b0d7e2bd3c9000b6666f042acb7a05dd578c35f909b50ffb [none]
+[debug] [2024-04-21T15:03:35.453Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/49887cac16288a67b0d7e2bd3c9000b6666f042acb7a05dd578c35f909b50ffb [stream]
+[debug] [2024-04-21T15:03:35.455Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/0643e578a9367fab660a457e8103b41f2c56563fd7e09706636624f5aeebaf72 [none]
+[debug] [2024-04-21T15:03:35.455Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/0643e578a9367fab660a457e8103b41f2c56563fd7e09706636624f5aeebaf72 [stream]
+[debug] [2024-04-21T15:03:35.457Z] [hosting][populate queue][FINAL] {"max":414,"min":414,"avg":414,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":427}
+[debug] [2024-04-21T15:03:35.457Z] [hosting] uploads queued: 7
+[debug] [2024-04-21T15:03:36.771Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/0643e578a9367fab660a457e8103b41f2c56563fd7e09706636624f5aeebaf72 200
+[debug] [2024-04-21T15:03:36.772Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/0643e578a9367fab660a457e8103b41f2c56563fd7e09706636624f5aeebaf72 [stream]
+[info] i  hosting: uploading new files [1/7] (14%) 
+[debug] [2024-04-21T15:03:36.986Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/f9af88968f62705907f12c3e53e9a4ca474b3db88b3ad3398e0a679158ea41d3 200
+[debug] [2024-04-21T15:03:36.986Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/f9af88968f62705907f12c3e53e9a4ca474b3db88b3ad3398e0a679158ea41d3 [stream]
+[debug] [2024-04-21T15:03:37.023Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/49887cac16288a67b0d7e2bd3c9000b6666f042acb7a05dd578c35f909b50ffb 200
+[debug] [2024-04-21T15:03:37.024Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/49887cac16288a67b0d7e2bd3c9000b6666f042acb7a05dd578c35f909b50ffb [stream]
+[debug] [2024-04-21T15:03:37.345Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/7a1a72943a1b2d7ed41d75574715a454ac9bfb21b636100c59ccd713ca3e86e1 200
+[debug] [2024-04-21T15:03:37.345Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/7a1a72943a1b2d7ed41d75574715a454ac9bfb21b636100c59ccd713ca3e86e1 [stream]
+[debug] [2024-04-21T15:03:37.563Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/bd46d50d393989467fc79ab955fd8c1e05f2891d3948374710734f189d95a14e 200
+[debug] [2024-04-21T15:03:37.564Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/bd46d50d393989467fc79ab955fd8c1e05f2891d3948374710734f189d95a14e [stream]
+[debug] [2024-04-21T15:03:37.866Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/e79b09530779c2af645ac57d96e657c88170dd0499b0ee7903eff2d900159a1f 200
+[debug] [2024-04-21T15:03:37.867Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/e79b09530779c2af645ac57d96e657c88170dd0499b0ee7903eff2d900159a1f [stream]
+[debug] [2024-04-21T15:03:38.126Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/c5ae02d0887b11d9616f82e059225103e3f973b0e377b3efc19c799b86d7d264 200
+[debug] [2024-04-21T15:03:38.126Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/intricate-web-420903/versions/a7a20866da5fd9ca/files/c5ae02d0887b11d9616f82e059225103e3f973b0e377b3efc19c799b86d7d264 [stream]
+[debug] [2024-04-21T15:03:38.126Z] [hosting][upload queue][FINAL] {"max":2684,"min":1329,"avg":1941.142857142857,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":2685}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[intricate-web-420903]: file upload complete 
+[debug] [2024-04-21T15:03:38.127Z] [hosting] deploy completed after 3174ms
+[debug] [2024-04-21T15:03:38.127Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "intricate-web-420903"
+    },
+    "version": "projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca"
+  }
+]
+[info] i  hosting[intricate-web-420903]: finalizing version... 
+[debug] [2024-04-21T15:03:38.128Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions/a7a20866da5fd9ca updateMask=status%2Cconfig
+[debug] [2024-04-21T15:03:38.128Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions/a7a20866da5fd9ca {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-04-21T15:03:38.755Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions/a7a20866da5fd9ca 200
+[debug] [2024-04-21T15:03:38.756Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/versions/a7a20866da5fd9ca {"name":"projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-04-21T15:03:34.634368Z","createUser":{"email":"Heangdavid168@gmail.com"},"finalizeTime":"2024-04-21T15:03:38.718166Z","finalizeUser":{"email":"Heangdavid168@gmail.com"}}
+[debug] [2024-04-21T15:03:38.756Z] [hosting] finalized version for intricate-web-420903:[object Object]
+[info] ✔  hosting[intricate-web-420903]: version finalized 
+[info] i  hosting[intricate-web-420903]: releasing new version... 
+[debug] [2024-04-21T15:03:38.757Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/channels/live/releases versionName=projects%2F390770317092%2Fsites%2Fintricate-web-420903%2Fversions%2Fa7a20866da5fd9ca
+[debug] [2024-04-21T15:03:38.757Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/channels/live/releases {}
+[debug] [2024-04-21T15:03:39.243Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/channels/live/releases 200
+[debug] [2024-04-21T15:03:39.243Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/intricate-web-420903/channels/live/releases {"name":"projects/390770317092/sites/intricate-web-420903/channels/live/releases/1713711818592000","version":{"name":"projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-04-21T15:03:34.634368Z","createUser":{"email":"Heangdavid168@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKcqysBoTMEtu_ocnI0_KjzIsAiFyDXqc0hqEQbnjWaQDW0DA=mo"},"finalizeTime":"2024-04-21T15:03:38.718166Z","finalizeUser":{"email":"Heangdavid168@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKcqysBoTMEtu_ocnI0_KjzIsAiFyDXqc0hqEQbnjWaQDW0DA=mo"}},"type":"DEPLOY","releaseTime":"2024-04-21T15:03:38.592Z","releaseUser":{"email":"Heangdavid168@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKcqysBoTMEtu_ocnI0_KjzIsAiFyDXqc0hqEQbnjWaQDW0DA=mo"}}
+[debug] [2024-04-21T15:03:39.243Z] [hosting] release: {"name":"projects/390770317092/sites/intricate-web-420903/channels/live/releases/1713711818592000","version":{"name":"projects/390770317092/sites/intricate-web-420903/versions/a7a20866da5fd9ca","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-04-21T15:03:34.634368Z","createUser":{"email":"Heangdavid168@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKcqysBoTMEtu_ocnI0_KjzIsAiFyDXqc0hqEQbnjWaQDW0DA=mo"},"finalizeTime":"2024-04-21T15:03:38.718166Z","finalizeUser":{"email":"Heangdavid168@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKcqysBoTMEtu_ocnI0_KjzIsAiFyDXqc0hqEQbnjWaQDW0DA=mo"}},"type":"DEPLOY","releaseTime":"2024-04-21T15:03:38.592Z","releaseUser":{"email":"Heangdavid168@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKcqysBoTMEtu_ocnI0_KjzIsAiFyDXqc0hqEQbnjWaQDW0DA=mo"}}
+[info] ✔  hosting[intricate-web-420903]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/intricate-web-420903/overview
+[info] Hosting URL: https://intricate-web-420903.web.app

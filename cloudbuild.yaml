@@ -13,7 +13,7 @@ steps:
   args: ['install']
 # lint
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'lint']
+  args: ['run', 'test:unit']
   # test
 # Build
 - name: 'gcr.io/cloud-builders/npm'
