@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\""
+    "deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\" "
   },
   "dependencies": {
     "core-js": "^3.8.3",
