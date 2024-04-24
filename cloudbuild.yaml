@@ -6,6 +6,9 @@ steps:
 # lint
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'lint']
+# test
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'test:unit']
 # Build
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
